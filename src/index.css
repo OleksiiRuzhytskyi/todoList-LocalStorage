@@ -1,5 +1,6 @@
 body {
   margin: 0;
+ width: 100%;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -10,4 +11,52 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+* {
+  box-sizing: content-box;
+}
+
+.main-container {
+  margin-left: 260px;
+}
+@media screen and (max-width: 576px) {
+  .main-container {
+    margin-left: 20px;
+  }
+}
+.todo-container {
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  background-color: rgb(0, 115, 255);
+  margin-top: 10px;
+  padding: 15px;
+  width: 30%;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.todo-item {
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  max-height:100%;
+  background-color: rgba(255,255,255,0.7);
+  border-radius: 5px;
+  padding: 2px 5px 2px 5px;
+  margin: 2px 5px 2px 5px;
+}
+.todo-item:hover{
+  background-color: rgba(255,255,255,0.5);
+}
+
+.todo-strike {
+  text-decoration: line-through;
+}
+.remove-btn {
+align-self: flex-start;
+}
+.remove-btn:hover {
+  color: red;
+
 }
